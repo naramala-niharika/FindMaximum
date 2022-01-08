@@ -8,50 +8,82 @@ To write a program to find the maximum of a list of numbers.
 1.	Get the list of marks as input
 2.	Use the sort() function or max() function or use the for loop to find the maximum mark.
 3.	Return the maximum value
+
 ## Program:
 
 i)	# To find the maximum of marks using the list method sort.
-```Python
+Python
+
+''' 
+
+Program to mark the maximum of marks using the list method sort
+
+Developed by:N.Niharika
+
+RegisterNumber:21500912
+
+'''
+
 def max_marks(marks):
+
     #Write your code here
     marks.sort()
-    large =marks[-1]
-    return(large)
-max_marks([88, 67, 77, 93, 95, 11, 67, 89, 56, 89])
+    large=marks[-1]
+    return large
 
+## Output:
+![Output](https://github.com/naramala-niharika/FindMaximum/blob/main/Screenshot%20(41).png?raw=true)
 
-```
+## Program:
 
 ii)	# To find the maximum marks using the list method max().
-```Python
+Python
+
+''' 
+Program to find the maximum marks using the list method max().
+
+Developed by:N.Niharika
+
+RegisterNumber:21500912
+
+'''
 
 def max_marks(list1):
+
     max1=list1[0]
     for i in list1:
         if i>max1:
             max1 = i
     return max1
 
-```
+## Output:
+![Output](https://github.com/naramala-niharika/FindMaximum/blob/main/Screenshot%20(42).png?raw=true)
+
+## Program:
 
 iii) # To find the maximum marks without using builtin functions.
-```Python
-def replacing(tuple1):
-    l=[]
-    v=int(input())
-    for i in tuple1:
-        i=i[0:2]+(v,)
-        l.append(i)
-    return l
-tuple1=eval(input())
+Python
 
+''' 
+Program to the maximum marks without using builtin functions.
 
+Developed by:N.Niharika
 
-```
-## Sample Input and Output
-![output](./img/max_marks1.jpg) 
+RegisterNumber:21500912
+
+'''
+
+def max_marks(list1):
+
+    # write your code here
+    max1=list1[0]
+    for i in list1:
+        if i>max1:
+            max1=i
+    return max1
 
 ## Output:
+![Output](https://github.com/naramala-niharika/FindMaximum/blob/main/Screenshot%20(43).png?raw=true)
 
 ## Result:
 Thus the program to find the maximum of given numbers from the list is written and verified using python programming.
